@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>practising my css, respostive design pattern</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <img src="./img/Logo.svg" alt="the logo"> 
+
+    <ul class="ul">
+      <li><a data-js-left href="#app">The App</a></li>
+      <li><a data-js-left href="#about">About Us</a></li>
+      <li><a data-js-left href="#get">Get in Touch</a></li>
+    </ul>
+
+    <button data-js-btn ><i class="fa-solid fa-bars" style="color: #c210f4;"></i></button>
+  </header>
+
+  <main> 
+    <section class="first_st" id="app">
+      <div class="wrap1">
+        <h2>Compare & book ride-hailing providers</h2>
+        <p>
+          Save money and time with WhichrRide. 
+          Think Compare the market but for taxis.
+        </p>
+      </div>
+
+      <picture>
+        <img src="./img/image 2.png" alt="images">
+      </picture>
+    </section>
+
+    <section class="second_st" id="about">
+    
+      <!-- the first wrap of this section -->
+
+      <div class="wrap2 when">
+        <h2>
+          Whichride brings together multiple ride hailing providers and local taxi firms in one app
+        </h2>
+
+        <p>
+          Allowing riders to select the provider that offers the best price, service or travel time, then seamlessly book within the app
+        </p>
+      </div>
+
+      <!-- the second wrap of this section -->
+
+      <article class="two_wrapping when" >
+        <!-- the first side, general wrap -->
+        <picture>
+      
+        </picture>
+
+                <!-- childs general -->
+        <div class="common_wrap when">
+
+            <!-- first wrap -->
+          <div class="inner_wrap1 when">
+
+            <div class="cycle cy1">
+              <p>Step 1</p>
+            </div>
+
+            <div class="inner_wrap2">
+              <h3>Enter location</h3>
+              <p>
+                Enter your destination to see a list of taxi providers near you.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- second wrap -->
+
+          <div class="inner_wrap1 when">
+
+            <div class="cycle cy2">
+              <p>Step 2</p>
+            </div>
+
+            <div class="inner_wrap2">
+              <h3>Find the perfect ride</h3>
+              <p>
+                Filter results by driver rating, driver sex, waiting times, price or speed. Reduce carbon footprint by only showing hybrid or electric cars.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- third wrap -->
+          <div class="inner_wrap1 when">
+
+            <div class="cycle cy3">
+              <p>Step 3</p>
+            </div>
+
+            <div class="inner_wrap2">
+              <h3>Pay and Save</h3>
+              <p>
+                Once you select a ride, we search the web for coupons to get you an even better deal, then book seemlessly within our app and earn points while you ride.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+    </section>
+
+    <section class="third_st when">
+      <h2>Why Whichride</h2>
+
+      <article>
+        <!-- the first wrap -->
+        <div class="wrab1 lin when">
+          <div class="img">
+            <img src="./img/map_car-dealer.svg" alt="car dealer icon">
+          </div>
+
+          <div class="text_wrap">
+            <b>More choices</b>
+            <p>
+              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+            </p>
+          </div>
+        </div>
+
+        <!-- the second wrap -->
+        <div class="wrab2 lin when">
+          <div class="img">
+            <img src="./img/bytesize_options.svg" alt="bytesize_options icon">
+          </div>
+
+          <div class="text_wrap">
+            <b>More choices</b>
+            <p>
+              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+            </p>
+          </div>
+        </div>
+
+        <!-- the third wrap -->
+        <div class="wrab3 lin when">
+          <div class="img">
+            <img src="./img/mdi_clock-fast.svg" alt="mdi_clock-fast icon">
+          </div>
+
+          <div class="text_wrap">
+            <b>More choices</b>
+            <p>
+              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+            </p>
+          </div>
+        </div>
+
+        <!-- the fouth wrap -->
+        <div class="wrab4 lin when">
+          <div class="img">
+            <img src="./img/ant-design_safety-outlined.svg" alt="ant-design_safety-outlined icon">
+          </div>
+
+          <div class="text_wrap">
+            <b>Safety first</b>
+            <p>
+              WhichRide lets you compare pricing across the major rideshares so you can save money on every ride.
+            </p>
+          </div>
+        </div>
+
+
+      </article>
+    </section>
+
+    <section class="fourth_st" id="get">
+      <div class="wrag when" >
+        <h2>Sign up to our beta form</h2>
+        <p>
+          Sign up to our mailing list to find out more information and keep up to date about our activities.
+        </p>
+      </div>
+      
+      <form>
+        <input type="email" placeholder="email">
+        <button>Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2020 WhichRide - All rights reserved</p>
+
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
