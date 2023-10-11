@@ -207,20 +207,8 @@ main {
   align-items: center;
   gap: 9px;
   font-size: 17.3px;
-  animation: comine 0.45s ease-in;
 }
 
-@keyframes comine {
-  from {
-     opacity: 0;
-     translate: -8rem;
-   }
- 
-   to {
-     opacity: 1;
-     translate: 0;
-   }
- }
 
 .second_st .wrap2 h2{
 font-family: Cera Pro;
@@ -267,33 +255,14 @@ max-width: 497px;
   border-radius: 38px;
   box-shadow: 15px 10px 70px 0px rgba(0, 0, 0, 0.49);
 
-  animation: com 0.45s ease-in;
 }
-
-@keyframes com {
-  from {
-     opacity: 0;
-     translate: -8rem;
-   }
- 
-   to {
-     opacity: 1;
-     translate: 0;
-   }
- }
-
-/* .two_wrapping picture img {
-  width: 272px;
-  max-height: 547px;
-} */
-
 
 .second_st .two_wrapping .common_wrap {
 display: inline-flex;
 flex-direction: column;
 align-items: center;
 gap: 39px;
-width: clamp(330px, 50vw, 410px);
+width: clamp(291px, 50vw, 410px);
 flex-shrink: 0;
 }
 
@@ -302,54 +271,6 @@ flex-shrink: 0;
   align-items: center;
   gap: 20px;
 }
-
-.common_wrap .inner_wrap1:first-child {
-  animation: cominge1 0.50s ease-in;
-}
-
-.common_wrap .inner_wrap1:nth-child(2) {
-  animation: cominge2 0.50s ease-in .20s;
-}
-
-.common_wrap .inner_wrap1:last-child {
-  animation: cominge3 0.50s ease-in .30s;
-}
-
-@keyframes cominge1 {
-  from {
-     opacity: 0;
-     translate: 4rem;
-   }
- 
-   to {
-     opacity: 1;
-     translate: 0;
-   }
- }
-
- @keyframes cominge2 {
-  from {
-     opacity: 0;
-     translate: 4rem;
-   }
- 
-   to {
-     opacity: 1;
-     translate: 0;
-   }
- }
-
- @keyframes cominge3 {
-  from {
-     opacity: 0;
-     translate: 4rem;
-   }
- 
-   to {
-     opacity: 1;
-     translate: 0;
-   }
- }
 
 .common_wrap .inner_wrap1 .cycle {
   width: 45px;
@@ -462,13 +383,12 @@ flex-shrink: 0;
 }
 
 .fourth_st .wrag, form {
-  width: clamp(330px, 50vw, 510px);
+  width: clamp(314px, 50vw, 510px);
   /* flex-shrink: 0; */
 }
 
 .fourth_st .wrag {
   text-align: center;
-  animation: comein 0.45s ease-in; 
 }
 
 .fourth_st .wrag h2 {
@@ -503,9 +423,10 @@ flex-shrink: 0;
 }
 form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 12px;
-  animation: coming 0.45s ease-in;
+  padding-inline: 10px
 }
 .fourth_st form input::placeholder {
   color: white;
@@ -561,10 +482,6 @@ section {
   opacity: 1;
 }
 
-.lin {
-  animation: comein 0.45s ease-in; 
-}
-
 @media screen and (min-width:768px) {
 
   header ul {
@@ -611,15 +528,13 @@ section {
   }
 
 
-  .lin:nth-child(odd) {
-    animation: comein 0.45s ease-in; 
-  }
-
-  .lin:nth-child(even) {
-    animation: coming 0.45s ease-in;
-  }
-
   .ul {
     align-items: center;
   }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
 }

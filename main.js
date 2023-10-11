@@ -29,6 +29,7 @@ function reveal() {
   for(let i = 0; i < reveals.length; i++){
     let windowheight = window.innerHeight;
     let revealtop = reveals[i].getBoundingClientRect().top;
+    
     let revealpoint = 150;
 
     if (revealtop < windowheight -revealpoint) {
@@ -39,6 +40,36 @@ function reveal() {
     }
   }
 }
+
+let form = document.querySelector('form')
+
+function listen(event) {
+  event.preventDefault()
+
+  let mbtn = document.querySelector('[data-js-mbtn]')
+
+  let input = document.querySelector('input')
+  let congrat = document.querySelector('.congrat_message')
+
+  if (input.value.length >= 6) [
+    congrat.innerHTML = 'Thank for subscribing', 
+    congrat.style.color = 'green',
+    input.value = null,
+    mbtn.innerHTML = 'Subscribed',
+    mbtn.style.background = 'white',
+    mbtn.style.color = 'black'
+
+    
+    ,setTimeout(() => {
+      congrat.innerHTML = null
+      mbtn.innerHTML = 'Subcribe'
+      mbtn.style.background = 'black'
+      mbtn.style.color = 'white'
+    }, 3000)
+  ]
+}
+
+form.addEventListener('submit', listen)
 
 
 
